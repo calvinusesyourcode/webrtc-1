@@ -1,0 +1,86 @@
+[debug] [2023-09-13T03:47:47.842Z] ----------------------------------------------------------------------
+[debug] [2023-09-13T03:47:47.845Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\calvi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-09-13T03:47:47.846Z] CLI Version:   12.5.3
+[debug] [2023-09-13T03:47:47.847Z] Platform:      win32
+[debug] [2023-09-13T03:47:47.847Z] Node Version:  v18.15.0
+[debug] [2023-09-13T03:47:47.849Z] Time:          Tue Sep 12 2023 20:47:47 GMT-0700 (Pacific Daylight Time)
+[debug] [2023-09-13T03:47:47.849Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-13T03:47:48.003Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-13T03:47:48.004Z] > authorizing via signed-in user (calvinducharme@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\calvi\3D Objects\webrtc-firebase-demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-13T03:47:50.396Z] Using project from CLI flag: calvin-art
+[debug] [2023-09-13T03:47:50.402Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/calvin-art [none]
+[debug] [2023-09-13T03:47:50.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/calvin-art 200
+[debug] [2023-09-13T03:47:50.786Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/calvin-art {"projectId":"calvin-art","projectNumber":"96800809207","displayName":"calvin-art-entity","name":"projects/calvin-art","resources":{"hostingSite":"calvin-art","realtimeDatabaseInstance":"calvin-art-default-rtdb","storageBucket":"calvin-art.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_be014fbb-2f11-4875-8ea7-3235ae58d271"}
+[info] i  Using project calvin-art (calvin-art-entity) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-13T03:48:05.503Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-13T03:48:05.616Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-13T03:48:05.616Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of ./index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\calvi\3D Objects\webrtc-firebase-demo 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=857738594&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-13T03:48:11.236Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-13T03:48:11.237Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-13T03:48:11.605Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-13T03:48:11.605Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-13T03:48:11.623Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-13T03:48:12.017Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-13T03:48:12.018Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"calvinusesyourcode","id":114726827,"node_id":"U_kgDOBtaXqw","avatar_url":"https://avatars.githubusercontent.com/u/114726827?v=4","gravatar_id":"","url":"https://api.github.com/users/calvinusesyourcode","html_url":"https://github.com/calvinusesyourcode","followers_url":"https://api.github.com/users/calvinusesyourcode/followers","following_url":"https://api.github.com/users/calvinusesyourcode/following{/other_user}","gists_url":"https://api.github.com/users/calvinusesyourcode/gists{/gist_id}","starred_url":"https://api.github.com/users/calvinusesyourcode/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/calvinusesyourcode/subscriptions","organizations_url":"https://api.github.com/users/calvinusesyourcode/orgs","repos_url":"https://api.github.com/users/calvinusesyourcode/repos","events_url":"https://api.github.com/users/calvinusesyourcode/events{/privacy}","received_events_url":"https://api.github.com/users/calvinusesyourcode/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"https://calvin.art","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":17,"public_gists":0,"followers":0,"following":3,"created_at":"2022-09-30T07:02:56Z","updated_at":"2023-09-09T23:59:30Z","private_gists":0,"total_private_repos":15,"owned_private_repos":15,"disk_usage":521250,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as calvinusesyourcode 
+[info] 
+[debug] [2023-09-13T03:48:32.811Z] >>> [apiv2][query] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key type=owner
+[debug] [2023-09-13T03:48:33.160Z] <<< [apiv2][status] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key 404
+[debug] [2023-09-13T03:48:33.161Z] <<< [apiv2][body] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-13T03:48:40.049Z] >>> [apiv2][query] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key type=owner
+[debug] [2023-09-13T03:48:40.382Z] <<< [apiv2][status] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key 404
+[debug] [2023-09-13T03:48:40.382Z] <<< [apiv2][body] GET https://api.github.com/repos/calvinusesyourcode/webrtc-1/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
